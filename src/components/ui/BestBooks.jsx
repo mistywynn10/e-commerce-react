@@ -8,7 +8,7 @@ const BestBooks = ({ id }) => {
       {books
         .filter((book) => {
           if (id) {
-            return book.rating === 5 && book.id != id;
+            return book.rating === 5 && book.id !== id;
           }
           return book.rating === 5;
         })
